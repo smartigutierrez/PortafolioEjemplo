@@ -1,0 +1,25 @@
+/* servicios */
+
+.servicios {
+    padding: 1rem;
+
+    .servicio{
+        padding: 1rem;
+        border-width: 1rem;
+        border-color: $gris;
+
+        img {
+            border-radius: 1rem;
+        }
+    }
+}
+
+@include tablet {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        margin: 2rem;
+        padding: 1rem;
+    }
+}

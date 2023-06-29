@@ -1,0 +1,71 @@
+
+/* formulario */
+.container-form{
+    padding: 1rem;
+}
+
+.formulario {
+    background-color: $gris;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    @include tablet {
+        width: 60rem;
+    }
+}
+
+.formulario__fieldset {
+    border: none;
+    
+}
+
+.formulario__legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: $white;
+
+}
+
+.campos__fields {
+    margin-bottom: 1rem;
+}
+
+.campos__fields label {
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom:  .5rem;
+    display: block;
+}
+
+.campos__fields textarea {
+    height: 15rem;
+}
+
+
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+@include tablet {
+    .campos {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+        
+    }
+    /* escogemos la fila 3 y la 4 asignandole el espacio de 1 a 3 */
+    .campos__fields:nth-child(3),
+    .campos__fields:nth-child(4) {
+        grid-column: 1/3;
+    }
+}

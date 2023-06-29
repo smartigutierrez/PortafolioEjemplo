@@ -1,0 +1,44 @@
+/* sobre mi */
+.personal{
+    background-color: $negro;
+
+    h2,h3,p {
+        color: $white;
+    }
+}
+
+.personal__container {
+    margin:0 auto;
+    width: 60%;
+}
+.personal__img {
+        width:96%;
+        display: block;
+        margin: auto;
+}
+
+.container .personal .personal__text{
+    padding: 1rem;
+}
+
+@include tablet{
+    .personal {
+        display:flex;/*acomodo cada elemento en un lado*/
+        align-items: center;
+        padding: 5rem;
+    }
+    .personal__img {
+        width: 80%; /*modifico el tamaño de la image*/
+    }
+    .personal__container{
+        flex: 1;/*les aplico el factor de crecimiento*/
+    }
+    .personal__text {
+        flex: 1;
+    }
+    
+}
+
+.personal__text--justify{
+    text-align: justify;
+}

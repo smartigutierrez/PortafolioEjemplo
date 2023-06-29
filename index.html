@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastián Martí | Freelancer</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" type="image/icon" href="./img/chess_board_icon_187661.ico"/>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/app.css" as="style">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="container-switch">
+        <label class="container-switch__switch" for="luz">
+            <input class="toggle container-switch__switch--opacy" type="checkbox" id="luz">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <header>
+        <h1>Desarrollador <span> Freelancer</span></h1>
+    </header>
+    <!-- finaliza el header -->
+
+    <!-- navegacion -->
+    <div class="nav-bg">
+        <h2 class="nav-bg__name">Sebastián Martí</h2>
+        
+        <div class="icon menu-btn mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav-bg__principal contenedor ">
+            <a class="nav-bg__principal--a" href="#sobremi">Sobre Mí</a>
+            <a class="nav-bg__principal--a" href="#servicios">Mis Proyectos</a>
+            <a class="nav-bg__principal--a" href="#contacto">Contacto</a>
+        </nav>
+        
+    </div>
+
+    <section class="banner">
+
+        <div class="hero">
+            <h1>¡La solución a tus problemas de desarrollo la encuentras aquí!</h1>
+            <div class="hero__ubicacion">
+
+            </div>
+
+        </div>
+        <!-- contenido-hero -->
+    </section>
+ <!-- sobre mi -->
+    <section class="container" id="sobremi">
+          
+        <div class="personal">
+            <div class=" personal__container">
+                <img class="personal__img" src="img/user.jpg" alt="">
+            </div>
+            <div class="personal__text personal__text--justify">
+                <h2>Sebastián Martí</h2>
+                <h3 class="personal__subtitle">Perfil</h3>
+                <p>¡Bienvenido/a a mi perfil! Soy un profesional de la traducción inglés-español con una pasión creciente por la programación. Mi objetivo es combinar mis habilidades lingüísticas con mi conocimiento en desarrollo web para crear soluciones tecnológicas y lingüísticas de calidad.
+                </p>
+                     
+                    <p>Mi enfoque actual se encuentra en el aprendizaje y desarrollo de habilidades de programación. Estoy familiarizado con HTML, CSS y el framework de Bootstrap, y también estoy explorando el potencial del framework Ruby on Rails. Busco oportunidades emocionantes que me permitan aplicar mis conocimientos y seguir creciendo como profesional bilingüe y programador.
+                    </p>
+                    
+            </div>
+        </div>
+    </section>
+    <!-- main -->
+    <main class="contenedor sombra" id="servicios">
+        <h2>Mis Proyectos</h2>
+
+        <div class="servicios" >
+            
+            <section class="servicio">
+                <h3>Ruby on Rails</h3>
+                <div class="iconos">
+                    <img src="img/proyecto1.png" alt="diseño web">
+                </div>
+                <p>
+            Desarollo de MVPs para una pronta puesta en marcha de tus ideas     
+                </p>
+            </section>
+            <section class="servicio">
+                <h3>Páginas responsivas</h3>
+                <div class="iconos">
+                    <img src="img/proyecto2.png" alt="marketing digital">
+                </div>
+                <p>
+                Desarrollo de páginas responsivas para diversos dispositivos                 
+            </p>
+            </section>
+            <section class="servicio">
+                <h3>Desarrollo integral</h3>
+                <div class="iconos">
+                    <img src="img/proyecto3.png" alt="ecommerce">
+                </div>
+                <p>
+Desarrollo completo para tu emprendimiento o negocio establecido
+                </p>
+            </section>
+
+        </div>
+            <!-- finaliza servicios -->
+
+            <section id="contacto" class="container-form">
+                <h2>Contacto</h2>
+                <form class="formulario" action="">
+                    <fieldset class="formulario__fieldset">
+                        <legend class="formulario__legend">Contactanos llenado todos los Campos</legend>
+                        <div class="campos">
+
+                            <div class="campos__fields">
+                                <label for="nombre">Nombre</label>
+                                <input class="input-text"  id="nombre" type="text" placeholder="Tu Nombre" required="true">
+                            </div>
+
+                            <div class="campos__fields">
+                                <label for="telefono">Telefono</label>
+                                <input class="input-text"  id="telefono" type="text" placeholder="Tu Numero" required="true">
+                            </div>
+
+                            <div class="campos__fields">
+                                <label for="correo">Correo</label>
+                                <input class="input-text"  id="correo" type="email" placeholder="Tu Email" required="true">
+                            </div>
+
+                            <div class="campos__fields">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="input-text" required="true" id="mensaje"></textarea>
+                            </div>
+                        </div>
+                        <!-- Campos -->
+                        <div class="alinear-derecha flex">
+                            <input type="submit" class="boton w-sm-100" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+       
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos Reservados</p>
+    </footer>
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
